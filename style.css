@@ -61,10 +61,7 @@ p {
 .nav-links {
   display: flex;
   list-style: none;
-}
-
-.nav-links li {
-  padding-right: 10px;
+  gap: 15px; /* Replaces manual li padding for cleaner alignment */
 }
 
 .nav-links a {
@@ -76,11 +73,17 @@ p {
 .nav-links a:hover {
   color: #04AA6D;
 }
+
 .container {
   display: grid;
-  place-items: center; /* Centers both horizontally and vertically */
+  place-items: center; 
   border: 2px solid #20522d;
+  padding: 20px; /* Added slight padding inside the container */
 }
+
 img {
-  padding: 8px top;
+  padding-top: 8px; /* Fixed invalid CSS */
+  max-width: 100%; /* Ensures large images scale down on smaller screens */
+  height: auto;    /* Maintains image aspect ratio */
+  display: block;
 }
