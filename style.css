@@ -81,3 +81,6 @@ p {
   place-items: center; /* Centers both horizontally and vertically */
   border: 2px solid #20522d;
 }
+img {
+  padding: 8px top;
+}
